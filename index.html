@@ -1,72 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'Accueil</title>
     <link rel="stylesheet" href="styles.css">
-<style type="text/css" id="dcoder_stylesheet">/* Reset CSS pour une meilleure cohérence entre les navigateurs */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-}
+        /* Styles généraux */
+        body {
+            font: 16px Arial, sans-serif;
+            text-align: center;
+            user-select: none;
+            overflow: hidden;
+            background-image: url("https://s1.1zoom.me/big0/211/378570-svetik.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-h1, h2 {
-    margin-bottom: 20px;
-}
+        h1, h2 {
+            margin-bottom: 20px;
+        }
 
-/* Styles pour les différents éléments */
-header, nav, main, footer {
-    padding: 20px;
-}
+        /* Styles pour les éléments */
+        header, nav, main, footer {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-}
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
 
-.start-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+        .start-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #fe0000;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-.start-button:hover {
-    background-color: #2980b9;
-}
+        .start-button:hover {
+            background-color: #265577;
+        }
 
-/* Media Queries pour la responsivité */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
+        /* Responsivité */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
 
-    h2 {
-        font-size: 24px;
-    }
-}
-</style></head>
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        /* Anti-clic droit */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script>
+        // Anti-clic droit
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
 <body>
     <header>
         <h1>ThtGuns</h1>
     </header>
     <nav>
         <ul>
-            <!-- Mettez vos éléments de navigation ici si nécessaire -->
+            <!-- Navigation -->
         </ul>
     </nav>
     <main>
@@ -77,6 +101,3 @@ nav ul {
     </main>
     <footer>
         <p>© 2023 ThtGuns. Tous droits réservés.</p>
-    </footer>
-
-</body></html>
